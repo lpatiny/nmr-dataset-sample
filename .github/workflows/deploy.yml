@@ -14,10 +14,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16
-      - name: npm install and build
+      - name: install nmrium and create toc
         run: |
-          npm ci
-          npm run build
+          npm i --global nmrium-cli
+          npx nmrium toc -c
       - name: push to gh-pages
         run: |
           gh-pages -d .
