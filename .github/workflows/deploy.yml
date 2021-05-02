@@ -1,0 +1,23 @@
+name: gh-pages deployment
+
+on:
+  push:
+    branches: master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 16
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - name: npm install and build
+        run: |
+          npm ci
+          npm run build
+      - name: push to gh-pages
+        run: |
+          gh-pages -d .
