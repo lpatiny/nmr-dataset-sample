@@ -20,4 +20,4 @@ jobs:
           npx nmrium toc -c
       - name: push to gh-pages
         run: |
-          gh-pages -d .
+          gh-pages -d "."
