@@ -16,8 +16,11 @@ jobs:
           node-version: 16
       - name: install nmrium and create toc
         run: |
-          npm i --global nmrium-cli gh-pages
+          npm i --global nmrium-cli 
           npx nmrium toc -c
+          git remote -v
       - name: push to gh-pages
-        run: |
-          gh-pages
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: .
