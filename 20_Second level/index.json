@@ -1,0 +1,36 @@
+{
+  "spectra": [
+    {
+      "source": {
+        "jcampURL": "./20_Second level/1h.jdx"
+      },
+      "display": {
+        "name": ""
+      }
+    },
+    {
+      "source": {
+        "jcampURL": "./20_Second level/cosy.jdx"
+      },
+      "display": {
+        "name": ""
+      }
+    },
+    {
+      "source": {
+        "jcampURL": "./20_Second level/hmbc.jdx"
+      },
+      "display": {
+        "name": ""
+      }
+    },
+    {
+      "source": {
+        "jcampURL": "./20_Second level/hsqc.jdx"
+      },
+      "display": {
+        "name": ""
+      }
+    }
+  ]
+}
