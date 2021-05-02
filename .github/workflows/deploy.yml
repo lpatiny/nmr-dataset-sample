@@ -16,7 +16,7 @@ jobs:
           node-version: 16
       - name: install nmrium and create toc
         run: |
-          npm i --global nmrium-cli
+          npm i --global nmrium-cli gh-pages
           npx nmrium toc -c
       - name: push to gh-pages
         run: |
